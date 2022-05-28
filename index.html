@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scale Generator</title>
+
+    <style>
+        body {
+            padding-left: 1em;
+            font-family: Helvetica,sans-serif;
+            font-size: 1.2em;
+        }
+
+        input[type='checkbox'] {
+            transform: scale(1.1);
+        }
+
+        #gen {
+            padding: 0.5em;
+            margin-top: 1em;
+            font-size: 0.6em;
+        }
+
+        h1 {
+            font-size: 4em;
+        }
+    </style>
+</head>
+<body>
+<div id="options"></div><br>
+<label for="removeUsed">Remove already chosen scales: </label><input id="removeUsed" type="checkbox"><br>
+<button id="gen" onclick="gen()">Generate</button><br>
+<h1 id="output"></h1>
+
+<script src="index.js"></script>
+</body>
+</html>
